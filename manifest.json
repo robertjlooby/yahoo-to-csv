@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Yahoo2CSV",
+  "description": "This extension allows the user to copy a CSV from Yahoo",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://sports.yahoo.com/dailyfantasy/contest/*"],
+      "js": ["yahoo2csv.js"],
+      "css": ["yahoo2csv.css"]
+    }
+  ]
+}
